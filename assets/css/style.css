@@ -1,0 +1,83 @@
+:root {
+    /* color palette */
+    --pbrown: #B06F00;
+    --pscarlet: #673327;
+    --porange: #D47600;
+    --pblue: #005B82;
+    --pgreen: #72CE9B;
+    --pdarkyellow: #9A8700; 
+}
+
+body { 
+    /* background-image: url("../images/vintage-concrete.gif"); */
+    background-color: white;
+    font-size: 20px;
+    line-height: 34px;
+    font-family: 'arial', 'Helvetica Neue', Helvetica, sans-serif;
+    height: 100%;
+    margin-bottom: 750px;
+}
+/*This sets up anchors to not be underlined, and for text to change to yellow on mouse hover  */
+a { text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: yellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -300px;
+    left: 0;
+    padding-left: 15px;
+}
+
+#subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: var(--pgreen);
+    position: relative;
+    top: -290px;
+    left: 0;
+    padding-left: 55px;
+}
+
+.porttitle {
+    color: var(--pgreen);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid var(--pgreen);
+    border-radius: .5em;
+    margin-left: 15px;
+    display: inline-block
+}
+
+.project {
+    width: 190px;
+    height: 240px;
+    margin: 15px;
+    border: 10px solid var(--pblue);
+    border-radius: .5em;
+    display: inline-block;
+}
+
+.description {
+        position: relative;
+        width: 100%;
+        top: -120px;
+        left: 0;
+        background-color: rgba(0, 0, 0, .6);
+        color: rgb(212, 250, 0);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        Border-top: 3px solid yellow;
+        Border-bottom: 3px solid yellow; 
+    }
