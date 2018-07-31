@@ -14,7 +14,6 @@ body {
   line-height: 34px;
   font-family: 'arial', 'Helvetica Neue', Helvetica, sans-serif;
   height: 100%;
-  margin-bottom: 25px;
 }
 
 a {
@@ -33,10 +32,6 @@ a.anchor {
   visibility: hidden;
 }
 
-p {
-  font-family: 'arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
 li {
   font-size: 16px;
 }
@@ -50,7 +45,6 @@ li {
 }
 
 #title {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 36px;
   color: yellow;
   position: relative;
@@ -60,7 +54,6 @@ li {
 }
 
 #subtitle {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   color: var(--pgreen);
   position: relative;
@@ -107,12 +100,11 @@ li {
 }
 
 .footerrow {
-  flex: 2;
+  flex: 3;
   width: 30vw;
 }
 
 .title {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   padding-left: 5px;
   padding-right: 5px;
@@ -133,7 +125,7 @@ li {
   background-color: var(--pgreen);
   color: white;
   border: 3px solid var(--pdarkyellow);
-  width: 75vw;
+  /* width: 75vw; */
 }
 
 .project {
@@ -177,6 +169,8 @@ li {
 
 #footerlinks{
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -213,6 +207,12 @@ li {
     }
   }
   @media (max-width: 1200px) {
+    .flex-grid {
+      display: block;
+    }
+  }
+
+  @media (max-width: 1400px) {
     .flex-grid {
       display: block;
     }
