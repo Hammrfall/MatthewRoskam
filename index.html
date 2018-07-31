@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matthew Roskam</title>
-    <!--requires the reset css to be in folder- not necessary if using bootstrap  -->
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-    <!--to use bootstrap 4.0  -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <!--references your own css sheet  -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
 </head>
 
 <body>
@@ -20,18 +15,71 @@
         <img src="assets/images/close-up-code.jpg" alt="Header" />
         <h1 id="title">Matthew Roskam</h1>
         <h2 id="subtitle">Software developer</h2>
-        <!-- <hr /> -->
+        <img id="myimage" src="assets/images/me.png" alt="me" />
     </div>
+    <div id="menubar" class="flex-grid">
+        <div id="menubarname" class="menuitem">
+            <h2>Matthew Roskam</h2>
+        </div>
+        <div class="menuitem">
+            <a href="https://www.linkedin.com/in/matthew-roskam-1613a135/">
+                <img src="assets/images/linkedin.png" alt="linked-in" />
+            </a>
+        </div>
+        <div class="menuitem">
+            <a href="https://github.com/Hammrfall">
+                <img src="assets/images/github.png" alt="git hub" />
+            </a>
+        </div>
+        <div class="menuitem">
+            <a href="mailto:mwroskam@gmail.com">
+                <img src="assets/images/email.png" alt="git hub" />
+            </a>
+        </div>
+    </div>
+    <a name="aboutme" class="anchor"></a>
+    <div class="maintitle title">About me</div>
 
     <div id="about">
         <p>
+            I am a seasoned programmer with over six years of experience. I have a B.A. from Samford University, and a full stack web
+            developer certificate from the University of Central Florida. My work programming robotic systems controls gave
+            me extensive experience in designing, developing, testing and deploying complex systems. My projects included
+            connecting into a wide-range of customer databases (mySQL, Microsoft SQL, Oracle, Access, Excel and CSVs), and
+            also providing intuitive interfaces for the users that provided real-time reporting of system status.
+        </p>
+        <br />
+        <p>
+            I am focused on providing elegant solutions by writing object based programs that provide maximum flexibility and code reusability.
+            I also have a passion for providing simple, intuitive interfaces for the user experience. I have successfully
+            led teams of programmers in the creative process of design and development, and in debugging and implementation.
+            I enjoy the collaborative nature of well executed projects, and I am always looking for “+1” opportunities to
+            exceed expectations.
 
         </p>
     </div>
+    <a name="projects" class="anchor"></a>
+    <div class="maintitle title">
+        Projects
+    </div>
+    <div id="projecttext">
+        <p>
+            Although this portfolio of projects represents a fraction of all those I have been involved in, they provide a view of what
+            full-stack development is all about.
+        </p>
+        <br />
+        <p>
+            Both the front end and the back-end have their own unique approaches and 'tricks'. When combined into full-stack projects,
+            they demonstrate the range of what can be done on the web.
+        </p>
+    </div>
     <div id="portfoliocontainer">
-        <div class="porttitle"><b>Front end projects</b></div>
+        <a name="frontprojects" class="anchor"></a>
+        <div class="porttitle title">
+            <b>Front end projects</b>
+        </div>
         <div class="port flex-grid">
-            
+
 
             <div class="project col">
                 <a href="https://hammrfall.github.io/Hangman-Game/">
@@ -78,9 +126,13 @@
                 </div>
             </div>
         </div>
-        <div class="porttitle"><b>Back end projects</b></div>
+        <a name="backprojects" class="anchor"></a>
+        <div class="porttitle title">
+
+            <b>Back end projects</b>
+        </div>
         <div class="port flex-grid">
-            
+
             <div class="project col">
                 <a href="https://github.com/Hammrfall/liri-node-app">
                     <img src="assets/images/Node_liri.jpg" alt="Liri" />
@@ -112,15 +164,17 @@
                     <img src="assets/images/friendfinder.jpg" alt="Friend finder" />
                 </a>
                 <div class="description">
-                    <h3>Express Friend Finder</h3>
+                    <h3>Express Friend Finder (P</h3>
                 </div>
             </div>
 
         </div>
-
-        <div class="porttitle"><b>Full stack projects</b></div>
+        <a name="stackprojects" class="anchor"></a>
+        <div class="porttitle title">
+            <b>Full stack projects</b>
+        </div>
         <div class="port flex-grid">
-            
+
 
             <div class="project col">
                 <a href="https://github.com/Hammrfall/burgers">
@@ -142,9 +196,12 @@
 
         </div>
 
-        <div class="porttitle"><b>Collaborative projects</b></div>
+        <a name="colprojects" class="anchor"></a>
+        <div class="porttitle title">
+            <b>Collaborative projects</b>
+        </div>
         <div class="port flex-grid">
-            
+
 
             <div class="project">
                 <a href="https://julianmojica.github.io/ProjectOne/">
@@ -166,17 +223,84 @@
 
         </div>
 
-    </div> <!-- end of portfoliocontainer -->
+    </div>
+    <!-- end of portfoliocontainer -->
 
+    <div id="footer">
+        <div class="flex-grid">
+            <div id="leftfooter" class="footerrow">
+                <h2 class="fh">Navigation</h2>
+                <a href="#aboutme" class="anchorlink">About me</a>
+                <ul>
+                    <a href="#projects" class="anchorlink">Projects</a>
+
+                    <a href="#frontprojects" class="anchorlink">
+                        <li>Front end</li>
+                    </a>
+                    <a href="#backprojects" class="anchorlink">
+                        <li>Back end</li>
+                    </a>
+                    <a href="#stackprojects" class="anchorlink">
+                        <li>Full stack</li>
+                    </a>
+                    <a href="#colprojects" class="anchorlink">
+                        <li>Collaborations</li>
+                    </a>
+                </ul>
+            </div>
+            <div id="centerfooter" class="footerrow">
+                <div class="fh">Technologies:</div>
+                <ul>
+                    <li>Full MERN stack</li>
+                    <li>Sequelize</li>
+                    <li>Mongoose</li>
+                    <li>Adobe Photoshop, Illustrator, & inDesign </li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div id="rightfooter" class="footerrow">
+                <div class="fh">Languages:</div>
+                <ul>
+                    <li>HTML, CSS, and JavaScript</li>
+                    <li>PHP</li>
+                    <li>jsx, jSON</li>
+                    <li>Visual Basic, C++</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <!--end of flex grid-->
+        <div id="footerlinks">
+            <div class="menuitem">
+                <a href="https://www.linkedin.com/in/matthew-roskam-1613a135/">
+                    <img src="assets/images/linkedin.png" alt="linked-in" />
+                </a>
+            </div>
+            <div class="menuitem">
+                <a href="https://github.com/Hammrfall">
+                    <img src="assets/images/github.png" alt="git hub" />
+                </a>
+            </div>
+            <div class="menuitem">
+                <a href="mailto:mwroskam@gmail.com">
+                    <img src="assets/images/email.png" alt="git hub" />
+                </a>
+            </div>
+        </div>
+        <div id="bottomfooter"> © 2018. All rights reserved </div>
+    </div>
+    <!--End of Footer-->
     <!--loads jquery  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script> -->
 
-<!--for firebase -->
+    <!--for firebase -->
     <!-- <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script> -->
     <!--for js.moment date/time library -->
     <!-- <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script> -->
     <!--references your script file  -->
-    <script src="assets/javascript/script.js"></script>
+    <!-- <script src="assets/script/javascript.js"></script> -->
 </body>
 
 </html>
